@@ -1,11 +1,13 @@
 package com.dmdev.lesson15;
 
+import com.dmdev.lesson15.Archer.*;
+
 public class TrainingGround {
     public static void main(String[] args) {
         Hero warrior=new Warrior("Валерия",15,60);
         Hero mage=new Mage("Гарри Поттер", 10,40);
         Hero archer=new Archer("Робингуд", 5,45);
-        Enemy enemy=new Enemy("Буратино", 50, 25);
+        Enemy enemy=new Enemy("Буратино", 100, 25);
         attackEnemy(enemy,warrior,mage,archer);
     }
     public static void attackEnemy(Enemy enemy,Hero...heroes){
@@ -22,7 +24,7 @@ public class TrainingGround {
         if(enemy.isAlive()){
             System.out.println("Игра окончена.ВЫ ПРОИГРАЛИ!");
         }else {
-            System.out.println("Вам удалась победить, вы выжили.");
+            System.out.println("Вам удалось победить, вы выжили.");
         }
     }
 }
