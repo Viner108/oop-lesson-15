@@ -2,6 +2,10 @@ package com.dmdev.lesson18;
 
 import com.dmdev.lesson15.Archer;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+
 public class ListRunner {
     public static void main(String[] args) {
         List<String> list = new List<>(10);
