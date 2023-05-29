@@ -1,9 +1,10 @@
 package com.dmdev.lesson18;
 
-public class List<T> {
+public class List1<T> {
     private T[] objects;
+
     private int size;
-    public List(int initialSize){
+    public List1(int initialSize){
         this.objects=(T[]) new Object[initialSize];
     }
     public void add(T element){
